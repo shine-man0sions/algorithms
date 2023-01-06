@@ -1,19 +1,37 @@
 #include <iostream>
 
+// create the class
 class AlgorithmsFunc {
-  public:
+  public: 
+
+  /// @brief this is a public function of class AlgorithmsFunc used to sort array
+  /// @param arr array
+  /// @param size  length of array
+
   void getSort(int *arr, int size) {
-    for (int i = 0; i < size; i++) {
+
+    // using for loop to get each element
+    for (int i = 0; i < size - 1; i++) {
+
+      // initional the index of minimum element
       int minPosition = i;
+
+      // using for loop to compare elements get the minimum index
       for (int j = i+1; j < size; j++){
-        if(arr[j] < arr[minPosition]) {
-          minPosition = j;
-        }
+        minPosition = arr[j] < arr[minPosition] ? j : minPosition;
       }
+
+      // exchange the elements
       int temp = arr[i];
       arr[i] = arr[minPosition];
       arr[minPosition] = temp;
-      printf("%d\n", arr[i]);
+
+      // print the array
+      printf("The step of %d, The result is",i);
+      for (int k = 0; k < size; k++) {
+        printf(" %d", arr[k]);
+      }
+      printf("\n");
     }
   }
 };
