@@ -19,13 +19,6 @@ namespace Selection{
       int temp = arr[i];
       arr[i] = arr[minPosition];
       arr[minPosition] = temp;
-
-      // print the array
-      printf("The step of %d, The result is",i);
-      for (int k = 0; k < size; k++) {
-        printf(" %d", arr[k]);
-      }
-      printf("\n");
     }
   }
 }

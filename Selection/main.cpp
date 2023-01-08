@@ -16,5 +16,8 @@ int main() {
 
   // array sort
   C.getSort(arr, n);
+
+  mgr.coutPrint(arr, n);
+  delete[] arr;
   return 0;
 }

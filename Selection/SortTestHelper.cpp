@@ -31,4 +31,9 @@ int* SortHelper::generateRamdonArray(int n, int rangeL, int rangeR) {
   return arr;
 }
 
+void SortHelper::coutPrint(int *arr, int n) {
+  for (int i = 0; i < n; i++) {
+    printf("%d ", arr[i]);
+  }
+}
 }
