@@ -1,14 +1,8 @@
+#include "Selection.h"
 #include <iostream>
 
-// create the class
-class AlgorithmsFunc {
-  public: 
-
-  /// @brief this is a public function of class AlgorithmsFunc used to sort array
-  /// @param arr array
-  /// @param size  length of array
-
-  void getSort(int *arr, int size) {
+namespace Selection{
+  void AlgorithmsFunc::getSort(int *arr, int size) {
 
     // using for loop to get each element
     for (int i = 0; i < size - 1; i++) {
@@ -34,11 +28,4 @@ class AlgorithmsFunc {
       printf("\n");
     }
   }
-};
-
-int main() {
-  int arr[10] = {2,5,8,20,6,10,13,21,43,15};
-  AlgorithmsFunc C;
-  C.getSort(arr, 10);
-  return 0;
 }
