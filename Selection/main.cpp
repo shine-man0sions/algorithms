@@ -4,6 +4,7 @@
 
 int main() {
   int n = 100;
+  int s = 300
 
   // using namespace SortTestHelper
   SortTestHelper::SortHelper mgr;
@@ -13,6 +14,8 @@ int main() {
 
   // using namespace Selection
   Selection::AlgorithmsFunc C;
+  // using namespace Selection
+    Selection::AlgorithmsFunc C;
 
   // array sort
   C.getSort(arr, n);
